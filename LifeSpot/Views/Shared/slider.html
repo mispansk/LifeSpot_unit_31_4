@@ -1,0 +1,37 @@
+﻿<p>
+    <br />
+    Но некоторые фотографии достопримечательностей можно посмотреть тут:
+    <br />
+    <!--Основной блок слайдера-->
+    <div class="slider">
+        <!--Первый слайд-->
+        <div class=" picture" style="display:block">
+            <h3>Лондон</h3>
+            <img src="../../Views/Shared/slider/london.jpg" title="Мост наверное " />
+        </div>
+        <!--Второй слайд-->
+        <div class=" picture" style="display:none">
+            <h3>Нью Йорк</h3>
+            <img src="../../Views/Shared/slider/ny.jpg" />
+        </div>
+        <!--Третий слайд-->
+        <div class=" picture" style="display:none">
+            <h3>Санкт-Петербург</h3>
+            <img src="../../Views/Shared/slider/spb.jpg" />
+        </div>
+
+        <!-- Кнопки-стрелочки -->
+        <!--поменять none на block, если нужен зацикленный слайдер (и в функции showSlides() поменять проверки)-->
+        <a class="prev" style="display:none" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095; </a>
+
+    </div>
+
+    <!--Кружочки-->
+    <div class="slider_dot" style="text-align:center" ;>
+        <div class="dot active_dot" onclick="currentSlide(1)"></div>
+        <div class="dot" onclick="currentSlide(2)"></div>
+        <div class="dot" onclick="currentSlide(3)"></div>
+    </div>
+
+</p>
